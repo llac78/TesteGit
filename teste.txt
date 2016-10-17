@@ -1,1 +1,8 @@
 Primeira linha escrita.
+
+1. Definir pasta para ser repositório;
+2. Executar o Git Bash dentro dela;
+3. "git init" para transformá-la em repositório;
+4. "git status" para verificar se há arquivos a serem "commitados";
+5. "git add nomeArquivo.extensao"
+6. "git commit -m "Texto da mensagem do commit"
