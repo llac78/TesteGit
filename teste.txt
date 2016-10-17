@@ -6,3 +6,7 @@ Primeira linha escrita.
 4. "git status" para verificar se há arquivos a serem "commitados";
 5. "git add nomeArquivo.extensao"
 6. "git commit -m "Texto da mensagem do commit"
+7. "git remote add origin https://github.com/user/nomeRepositorio.git"
+	- conectar repositório a um servidor remoto - 
+8. "git push origin master" para enviar ao repositório remoto (github)
+	- master pode ser substituído pelo nome de uma nova branch -
