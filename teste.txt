@@ -10,4 +10,4 @@ Primeira linha escrita.
 	- conectar repositório a um servidor remoto - 
 8. "git push origin master" para enviar ao repositório remoto (github)
 	- master pode ser substituído pelo nome de uma nova branch -
-9. "git push origin leop" - teste commit para uma nova branch
+9. "git checkout -b leop" - teste commit para uma nova branch
