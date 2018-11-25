@@ -1,0 +1,163 @@
+﻿Curso Git - udemy
+
+Configuração do user name
+git config --global user.name "Leopoldo Costa"
+
+Configuração do e-mail
+git config --global user.email "llac78@gmail.com"
+
+Definir editor de texto
+git config --global core.editor nome_do_editor
+Obs: por padrão, ele configura o editor Vim. Na instalação, também há este recurso de escolha.
+
+Para saber o user name
+git config user.name
+
+Para saber o e-mail
+git config user.email
+
+Para saber tudo
+git config --list
+
+Para criar diretório
+mkdir nome_do_diretorio
+
+Para entrar no diretório
+cd nome_do_diretorio
+
+Tornar o diretório em Repositório
+git init
+
+Para entrar no diretório .git
+cd .git
+
+Listar conteúdo do diretório
+ls
+
+Para retornar ao diretório anterior (1 nível)
+cd ..
+
+Verificar o status do Repositório no momento
+git status
+
+*********************************************
+*** Ciclo de Vida dos Status dos Arquivos ***
+*********************************************
+1 - untracked  - arquivo criado no Repositório, mas ainda não foi visto pelo Git
+2 - unmodified - arquivo reconhecido pelo Git, mas que ainda não tem nenhuma modificação
+3 - modified   - arquivo editado/modificado, mas ainda não foi levado para ser 'committado'
+4 - staged     - arquivo pronto para ser 'committado' (área onde será criada a versão)
+
+Adicionar arquivo ao Repositório
+git add nome_do_arquivo.extensao
+
+Passar do status modified para staged
+git add nome_do_arquivo.extensao
+
+Criar primeiro commit com comentário (-m)
+git commit -m "Teste commit do Git"
+
+git log
+git log --decorate
+git log --author="Nome do autor"
+
+Para listar os commits realizados de acordo com seus respectivos autores
+git shortlog
+
+Para listar a quantidade de commits realizados de acordo com seus respectivos autores
+git shortlog -sn
+
+Mostrar as branchs graficamente
+git log --graph
+
+git show codigo_hash
+
+Para verificar a nova alteração antes de realizar o commit
+git diff
+
+Para desfazer a modificação, retornar para antes da edição
+git checkout nome_arquivo
+
+Para remover do stage o arquivo do local que estou
+git reset HEAD nome_arquivo
+
+Para 'matar' o commit antes(pois o outro deixará de existir), e o arquivo ficará staged, pronto para ser commitado 
+git reset --soft codigo_hash
+
+Para 'matar' o commit, e o arquivo ficará modified 
+git reset --mixed codigo_hash
+
+Para 'matar' o commit totalmente 
+git reset --hard codigo_hash
+
+Para vincular a key SSH para enviar para repositório remoto
+- Diretório onde ficam as keys SSH
+cd ~/.ssh/
+
+- Listar arquivos(ls)
+
+Para pegar a key
+- cat id_rsa.pub
+
+Copiar a key e, no github, em Settings > SSH and GPG Keys
+- New SSH Key
+- Por o nome e colar a key 
+
+Para fazer ligação do repositório com o github
+git remote add origin endereco_repositorio_git
+
+Para mostrar o repositório
+git remote
+
+Para mostrar o repositório com mais detalhes
+git remote -v
+
+Para enviar os arquivos para o repositório remoto
+git push -u origin master
+-origin: para onde vai
+-master: de onde vem
+
+Para enviar os arquivos alterados para o repositório remoto
+git commit -am "comentários"
+
+Para fazer push da modificação para o repositório remoto
+git push origin master
+
+Para criar uma branch
+git checkout -b nome_da_branch
+git branch: lista as branches existentes e a que você está no momento com *
+
+Para mudar de branch
+git checkout nome_da_branch
+
+Para remover uma branch
+git branch -D nome_da_branch
+
+- Criar arquivo de texto .gitignore
+- Citar quais arquivos não devem ser rastreados. Ex: *.json
+- No git status, os arquivos .json não aparecerão
+
+git stash: guarda as modificações caso não queira commitar agora
+git stash apply: aplica as modificações que foram guardadas
+git stash list: mostra os stashes
+git stash clear: limpa
+
+Para criar Alias(atalhos)
+git config --global alias.s status (para o git status)
+git s
+
+Para criar tag
+git tag -a 1.0.0 -m "comentários"
+
+Para remover tag
+git tag -d 1.0.0
+
+Para remover tag no github
+git push origin :1.0.0
+
+Para subir a tag
+git push origin master --tags (depois verificar no github)
+
+Para desfazer uma modificação, colocando o código anterior sem perder o que foi feito, diferente do reset 
+git revert codigo_commit
+
