@@ -1,0 +1,1 @@
+novo arquivo para testes do Git.
