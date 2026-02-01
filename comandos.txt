@@ -2,4 +2,5 @@ Novo arquivo para testes do Git.
 Adicionando nova linha.
 Testando git reset.
 Testando o comando cherry-pick.
-Teste duas branches para master
+Teste duas branches para master (conflito)
+Teste branch A cherry-pick.(conflito)
