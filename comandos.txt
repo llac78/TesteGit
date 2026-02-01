@@ -1,2 +1,3 @@
 Novo arquivo para testes do Git.
 Adicionando nova linha.
+Testando git reset
