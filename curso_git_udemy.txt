@@ -130,7 +130,7 @@ git branch: lista as branches existentes e a que você está no momento com *
 Para mudar de branch
 git checkout nome_da_branch
 
-Para remover uma branch
+Para remover uma branch (com D (maiúsculo) torna-se um force, deletar normalmente é com d (minúsculo), sendo -d)
 git branch -D nome_da_branch
 
 - Criar arquivo de texto .gitignore

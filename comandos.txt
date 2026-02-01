@@ -1,1 +1,2 @@
-novo arquivo para testes do Git.
+Novo arquivo para testes do Git.
+Adicionando nova linha.
