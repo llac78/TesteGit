@@ -2,3 +2,4 @@ Novo arquivo para testes do Git.
 Adicionando nova linha.
 Testando git reset.
 Testando o comando cherry-pick.
+Teste branch A cherry-pick.
